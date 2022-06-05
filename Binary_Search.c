@@ -34,6 +34,7 @@ int binarySearch(int arr[], int search, int n)
 int main()
 {
     int i, n, search;
+    printf("Enter number of element: ");
     scanf("%d", &n);
 
     int arr[n+5];
@@ -47,6 +48,7 @@ int main()
     {
          printf("%d ", arr[i]);
     }
+    printf("Enter searching element: ");
     scanf("%d", &search);
     search=binarySearch(arr, search, n);
     if(search == -1 )
